@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="HidingStuff.exe" version="1.0.0.1" publicKeyToken="e44534759db6bf53" language="neutral" processorArchitecture="msil" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="HidingStuff" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="HidingStuff.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the 
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward 
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="HidingStuff.exe" size="10152">
+      <assemblyIdentity name="HidingStuff" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>jwkXUOW70+6ka4bMTEOrCSO0jioPiE7U1t6H7erHJsw=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="HidingStuff.exe.config" size="189">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>rl5/qDc7Jz+tB+BIbOv9iMGPlRe6YJwrjmU09dnlPcs=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=NAZGUL\carda" issuerKeyHash="c2bfc362716d08066ba4e67369ac6af0183573ca" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>la+47Kdc7iSiYQGWzIMOWe/6Cc+Kp3BvAcc+dtyKZ2M=</DigestValue></Reference></SignedInfo><SignatureValue>OIUL6UnRnwuYRqG07VVduTiCuvTo0WBQwg8s7XyGHYy2W7XgCwTgHpj7ekDunMj9EmiD/gNAI3buF5SlZoGEY3qczP9E8Qx9DPTX85Va5cfXkHQP52CZSZqe5oxJTR2uvqgl88CAJUT5OKcZBJTha62+cDLIsHpz25gyiQnF4A0=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>tbL4xhziipxO+xH6/0Gpn7P5o3QStzLSsrNS8mcig0gr1OC0U9zDSXknJ+l93r39dMXkGazKdKN+qFk89oHP8FPr4i8LfKl+xczMUSGsHL9Hj8Dkr255yO6p643DzWcwM0glSZpOTsntL/BU/+SPZzf2heK1dl3b94SUHnstiY0=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="63678adc763ec7016f70a78acf09faef590e83cc960161a224ee5ca7ecb8af95" Description="" Url=""><as:assemblyIdentity name="HidingStuff.exe" version="1.0.0.1" publicKeyToken="e44534759db6bf53" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=NAZGUL\carda</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>MYlz2sWLEaKvlbpwzQF65876/ewNR0uIzm/iYtXxKA8=</DigestValue></Reference></SignedInfo><SignatureValue>b3BMMIMPiPmBxi3PfNbpZ0nS5coVuIuif2l/PKWCcQWAaGR0+AQpiTp28noyQ/Nuqcr6bGhYQQBlgfpcETu+JCGyhyOblaWjCKLopSAYecKO2F0qkLpjGjSPKC3Gl2GMbQWSeLGsd1VCL98MH9vqCMoIedHt0om03fBHKAXKo+k=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>tbL4xhziipxO+xH6/0Gpn7P5o3QStzLSsrNS8mcig0gr1OC0U9zDSXknJ+l93r39dMXkGazKdKN+qFk89oHP8FPr4i8LfKl+xczMUSGsHL9Hj8Dkr255yO6p643DzWcwM0glSZpOTsntL/BU/+SPZzf2heK1dl3b94SUHnstiY0=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIByTCCATKgAwIBAgIQUVS+2MPsT7dGDQvyng7Y7TANBgkqhkiG9w0BAQsFADAjMSEwHwYDVQQDHhgATgBBAFoARwBVAEwAXABjAGEAcgBkAGEwHhcNMTgxMTA2MDgwMzMzWhcNMTkxMTA2MTQwMzMzWjAjMSEwHwYDVQQDHhgATgBBAFoARwBVAEwAXABjAGEAcgBkAGEwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBALWy+MYc4oqcTvsR+v9BqZ+z+aN0Ercy0rKzUvJnIoNIK9TgtFPcw0l5Jyfpfd69/XTF5BmsynSjfqhZPPaBz/BT6+IvC3ypfsXMzFEhrBy/R4/A5K9uecjuqeuNw81nMDNIJUmaTk7J7S/wVP/kj2c39oXitXZd2/eElB57LYmNAgMBAAEwDQYJKoZIhvcNAQELBQADgYEAYxr8VHUobAiQxhDR1KkWgtnpsTGE3/jWqdApbcLkupalEMIJHDWI5VTwhzhCTchr0ZArICGH9RqxOaPUfWki+Cm9kzBPvYvyfv0SG2juPD6+aqTTT9cQLLeIBQPOyE5xmEX82JH863qc+nSRk4fv0PEGSg/y/IHWQNX0ewbUVWU=</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
